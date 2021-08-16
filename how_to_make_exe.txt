@@ -1,0 +1,35 @@
+Per creare l'eseguibile per windows, posizionati dentro la root del progetto e dai
+
+electron-packager . ammissione --platform=win32 --arch=x86_64
+
+se non dovesse andare perchè il tuo processore non suppporta i 32 bit allora dai il seguente comando
+
+electron-packager . ammissione --platform=win32 --arch=x64
+
+MAC:
+
+1)
+
+npx electron-packager . --appname=ammissione --app-bundle-id=com.ammissione --electron-version=8.2.0 --overwrite --platform=mas --arch=x64 --icon=icons.icns --prune --out=mas-build --ignore --app-version=1.0.5 --ignore=.+.o$
+
+
+2)
+
+Sign:
+
+npx electron-osx-sign /Users/oreste/desktop/TestAmmissione/mas-build/Ammissione-mas-x64/Ammissione.app --entitlements=/Users/oreste/desktop/TestAmmissione/entitlements.mas.plist --entitlements-loginhelper=/Users/oreste/desktop/TestAmmissione/entitlements.mas.loginhelper.plist --entitlements-inherit=/Users/oreste/desktop/TestAmmissione/entitlements.mas.inherit.plist --provisioning-profile=/Users/oreste/desktop/TestAmmissione/Oreste_macbook_pro_macappstore_distribution.provisionprofile --identity="3rd Party Mac Developer Application: Test Ammissione S.R.L. (YQA2RDBSBQ)" --no-gatekeeper-assess
+
+
+3)
+
+sh mas-sign.sh
+
+
+THATS IT
+
+#Development
+electron-osx-sign /Users/oreste/Dropbox/Work/Progetti/Clienti/Laricchiuta/Electron\ Source\ Code_to_update/mas-build/Ammissione-mas-x64/Ammissione.app --entitlements=/Users/oreste/Dropbox/Work/Progetti/Clienti/Laricchiuta/Electron\ Source\ Code_to_update/entitlements.mas.plist --entitlements-loginhelper=/Users/oreste/Dropbox/Work/Progetti/Clienti/Laricchiuta/Electron\ Source\ Code_to_update/entitlements.mas.loginhelper.plist --entitlements-inherit=/Users/oreste/Dropbox/Work/Progetti/Clienti/Laricchiuta/Electron\ Source\ Code_to_update/entitlements.mas.inherit.plist --provisioning-profile=/Users/oreste/Dropbox/Work/Progetti/Clienti/Laricchiuta/Electron\ Source\ Code_to_update/Oreste_Provisioning_Mac_Development.provisionprofile --type=development
+
+npx electron-osx-sign /Users/oreste/desktop/TestAmmissione/mas-build/Ammissione-mas-x64/Ammissione.app --entitlements=/Users/oreste/desktop/TestAmmissione/entitlements.mas.plist --entitlements-loginhelper=/Users/oreste/desktop/TestAmmissione/entitlements.mas.loginhelper.plist --entitlements-inherit=/Users/oreste/desktop/TestAmmissione/entitlements.mas.inherit.plist --provisioning-profile=/Users/oreste/desktop/TestAmmissione/Oreste_macbook_pro_development_provisioning.provisionprofile --identity="3rd Party Mac Developer Application: Test Ammissione S.R.L. (YQA2RDBSBQ)" --no-gatekeeper-assess --type=development
+
+Create .app for mas

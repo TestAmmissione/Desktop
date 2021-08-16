@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="main">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="main.css">
+    <!-- Insert this line above script and/or imports  -->
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <!-- Normal script or imports https://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquerycookie.js"></script>
+    <script src="js/sentry.js"></script>
+    <script>require('./js/main.js')</script>
+    <!-- Insert this line after script and/or imports -->
+    <script>if (window.module) module = window.module;</script>
+  </head>
+  <body oncontextmenu="return false;" class="main">
+    <div id="header">
+      <div id="title"></div>
+        <div class="close">
+          <svg width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.726 15.402c.365.366.365.96 0 1.324-.178.178-.416.274-.663.274-.246 0-.484-.096-.663-.274L8.323 9.648h.353L1.6 16.726c-.177.178-.416.274-.663.274-.246 0-.484-.096-.663-.274-.365-.365-.365-.958 0-1.324L7.35 8.324v.35L.275 1.6C-.09 1.233-.09.64.274.274c.367-.365.96-.365 1.326 0l7.076 7.078h-.353L15.4.274c.366-.365.96-.365 1.326 0 .365.366.365.958 0 1.324L9.65 8.675v-.35l7.076 7.077z" fill="#FFF" fill-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="minimize close">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 48 60" enable-background="new 0 0 48 48" xml:space="preserve"><g><g><path fill="#FFF" d="M46.1,25.1H1.7c-0.5,0-1-0.399-1-1s0.4-1,1-1h44.5c0.5,0,1,0.4,1,1S46.7,25.1,46.1,25.1z"/></g></g></svg>
+        </div>
+      </div>
+    </div>
+    <webview id="mainWebview" nodeintegration="on" partition="persist:sitesession" allowpopups preload="./js/preload.js"></webview>
+    <div class="over-layer">
+        <div class="splashscreen">
+            <div class="title"></div>
+            <div class="logo"></div>
+            <div class="loading">Caricamento in corso...</div>
+            <div id="first_loading_circle">
+                <div class="sk-fading-circle">
+                    <div class="sk-circle1 sk-circle"></div>
+                    <div class="sk-circle2 sk-circle"></div>
+                    <div class="sk-circle3 sk-circle"></div>
+                    <div class="sk-circle4 sk-circle"></div>
+                    <div class="sk-circle5 sk-circle"></div>
+                    <div class="sk-circle6 sk-circle"></div>
+                    <div class="sk-circle7 sk-circle"></div>
+                    <div class="sk-circle8 sk-circle"></div>
+                    <div class="sk-circle9 sk-circle"></div>
+                    <div class="sk-circle10 sk-circle"></div>
+                    <div class="sk-circle11 sk-circle"></div>
+                    <div class="sk-circle12 sk-circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="electron_close_splash" class="electron-close-overlay">
+      <a href="javascript:void(0)" class="electron-close-overlay-close" onclick="closeSplash()">&times;</a>
+      <div class="splashscreen">
+          <div class="title"></div>
+          <div class="logo"></div>
+          <div id="loading" class="loading">
+              <p>Non è possibile toccare la tastiera.</p>
+              <p><span id="close_warning">Avviso 1/3.</span></p>
+              <p>Al terzo avviso l'App sarà chiusa.</p>
+          </div>
+          <div id="button" onclick="closeSplash()" class="btn"><span class="btn_text">OK</span></div>
+          <div id="loading_circle"></div>
+      </div>
+    </div>
+  </body>
+</html>

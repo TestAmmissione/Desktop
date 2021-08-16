@@ -1,0 +1,398 @@
+<script>
+let quizTest = [  
+  {  
+    "id_domanda":508,
+    "categoriadelladomanda":"93",
+    "d":"La soglia uditiva e':",
+    "domande_1":"il punto di emergenza del nervo acustico",
+    "domande_2":"il livello di intensita' minima al quale e' possibile percepire un suono",
+    "domande_3":"il livello di intensita' massima al quale e' possibile percepire un suono",
+    "domande_4":"il punto di ingresso del nervo acustico",
+    "domande_5":"Nessuana delle Risposte precedenti",
+    "others_info":"508dbDcF6j3Z,1,2,3,0,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":509,
+    "categoriadelladomanda":"93",
+    "d":"Scenario AA1M: Una donna accusa sordit\u00e0, acufeni e vertigine. In anamnesi vengono evidenziati diabete mellito non insulino-dipendente e ipertensione arteriosa in trattamento farmacologico.\u00a0Quale potrebbe essere il sospetto di diagnosi?",
+    "domande_1":"Malattia di Still",
+    "domande_2":"Malattia di Meniere",
+    "domande_3":"Malattia di Kawasaki",
+    "domande_4":"Malattia di Rendu-Osler",
+    "domande_5":"La Risposta C e la Risposta A sono corrette",
+    "others_info":"509dbcToPePq,1,2,0,3,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":510,
+    "categoriadelladomanda":"93",
+    "d":"Scenario AA1M: Una donna accusa sordit\u00e0, acufeni e vertigine. In anamnesi vengono evidenziati diabete mellito non insulino-dipendente e ipertensione arteriosa in trattamento farmacologico. A quale evento patologico potrebbe essere correlata l'insorgenza della triade sintomatologica?",
+    "domande_1":"Idrope endolinfatica",
+    "domande_2":"Deficit vitaminico",
+    "domande_3":"Diabete di tipo I",
+    "domande_4":"Diabete di tipo II",
+    "domande_5":"La Risposta A e la Risposta C e la Risposta B sono corrette",
+    "others_info":"510dbCOFvjY0,0,2,3,1,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":511,
+    "categoriadelladomanda":"93",
+    "d":"Scenario AA1M: Una donna accusa sordit\u00e0, acufeni e vertigine. In anamnesi vengono evidenziati diabete mellito non insulino-dipendente e ipertensione arteriosa in trattamento farmacologico.\u00a0Quale delle seguenti strategie terapeutiche e' CORRETTA?",
+    "domande_1":"Somministrazione di diuretici osmotici nelle fasi acute",
+    "domande_2":"Somministrazione di emazie concentrate",
+    "domande_3":"Distruzione dell'VIII nervo acustico in toto se l'udito non e' compromesso",
+    "domande_4":"Distruzione dell'VII nervo acustico in toto se l'udito non e' compromesso",
+    "domande_5":"La Risposta D e la Risposta A e la Risposta B sono corrette",
+    "others_info":"511db0rqSscz,0,2,3,1,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":512,
+    "categoriadelladomanda":"93",
+    "d":"Scenario AA13F: Un collega consulta il medico specialista in merito all'interpretazione del timpanogramma in figura. A quale patologia si potrebbe associare tale timpanogramma?",
+    "domande_1":"Ipoacusia da rumore",
+    "domande_2":"Vertigine posizionale parossistica benigna",
+    "domande_3":"Neurinoma del nervo acustico",
+    "domande_4":"Otite media con effusione",
+    "domande_5":"La Risposta A e la Risposta B sono corrette",
+    "others_info":"512dbPC2sPHz,3,1,0,2,4",
+    "imagine_del_db":"https:\/\/liberainformazione.it\/admin0290aa\/wp-content\/uploads\/2018\/04\/oki.jpg"
+  },
+  {  
+    "id_domanda":513,
+    "categoriadelladomanda":"93",
+    "d":"Scenario TT3C: Una donna, madre di 35 anni, con anamnesi familiare positiva per sordit\u00e0, riferisce al medico curante ipoacusia e ronzii all'orecchio ormai da lungo tempo.\u00a0Il medico sospetta un'otosclerosi e le prescrive delle indagini piu' approfondite. Quale dei seguenti referti e' realistico?",
+    "domande_1":"Audiometria tonale normale",
+    "domande_2":"Timpanogramma di tipo S",
+    "domande_3":"Riflesso stapediale assente",
+    "domande_4":"Riflesso stapediale normale",
+    "domande_5":"La Risposta A e la Risposta C e la Risposta B sono corrette",
+    "others_info":"513db8LykFXa,2,0,3,1,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":514,
+    "categoriadelladomanda":"93",
+    "d":"Scenario DO4R: Un uomo accusa otodinia violenta associata a rialzo febbrile, senso di ovattamento, acufeni, talora vertigini e secrezioni auricolari di tipo mucopurulento.\u00a0Quale indagine deve essere eseguita in prima battuta per orientare la diagnosi?",
+    "domande_1":"Audiometria tonale",
+    "domande_2":"Test di Boel",
+    "domande_3":"Test di Blumberg",
+    "domande_4":"Otoscopia",
+    "domande_5":"La Risposta A e la Risposta B sono corrette",
+    "others_info":"514dbTMAwBg1,3,1,2,0,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":515,
+    "categoriadelladomanda":"93",
+    "d":"Scenario QW5P: Una paziente \u00e8 affetta da vertigine parossistica posizionale. Quale caratteristica delle vertigini puo' far propendere per questa diagnosi?",
+    "domande_1":"Le vertigini sono rotatorie, episodiche e di breve durata (circa 10-30 secondi)",
+    "domande_2":"Le vertigini sono di origine muscolare",
+    "domande_3":"Le vertigini sono rotatorie, episodiche e sempre di lunga durata (circa 10-30 minuti)",
+    "domande_4":"La vertigine non viene scatenata dal cambiamento di posizione",
+    "domande_5":"La Risposta A e la Risposta B sono corrette",
+    "others_info":"515dbVe1VFsO,0,2,1,3,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":516,
+    "categoriadelladomanda":"93",
+    "d":"Scenario QW5P: Una paziente \u00e8 affetta da vertigine parossistica posizionale. Quale manovra e' praticabile per risolvere la sintomatologia vertiginosa?",
+    "domande_1":"La manovra di Giordano",
+    "domande_2":"La manovra di Epley",
+    "domande_3":"La manovra di Valsalva",
+    "domande_4":"La manovra di Heimlich",
+    "domande_5":"La Risposta A e la Risposta B sono corrette",
+    "others_info":"516db7EoXhqp,1,2,0,3,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":953,
+    "categoriadelladomanda":"93",
+    "d":"Il labirinto osseo ha sede:",
+    "domande_1":"nella compagine della rocca petrosa dell'osso occipitale",
+    "domande_2":"nella compagine della rocca petrosa dell'osso temporale",
+    "domande_3":"nella compagine della rocca petrosa dell'osso parietale",
+    "domande_4":"lateralmente alle coane",
+    "domande_5":"La Risposta A e la Risposta C e la Risposta B sono corrette",
+    "others_info":"953db0ELUDHm,1,2,0,3,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":954,
+    "categoriadelladomanda":"93",
+    "d":"La sindrome di Pendred comporta sordita' neurosensoriale associata:",
+    "domande_1":"a gozzo endemico",
+    "domande_2":"ad albinismo",
+    "domande_3":"a nefropatia congenita",
+    "domande_4":"a retinite pigmentosa",
+    "domande_5":"La Risposta C e la Risposta A sono corrette",
+    "others_info":"954dbLJNkWqI,0,3,2,1,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":955,
+    "categoriadelladomanda":"93",
+    "d":"Indicare quale affermazione inerente al colesteatoma acquisito e' ERRATA:",
+    "domande_1":"si puo' manifestare con acufeni",
+    "domande_2":"si puo' manifestare con vertigini",
+    "domande_3":"si manifesta con ipoacusia",
+    "domande_4":"e' sempre asintomatico",
+    "domande_5":"I dati forniti non consentono di dare una risposta",
+    "others_info":"955dbOoRdCL3,3,2,1,0,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":956,
+    "categoriadelladomanda":"93",
+    "d":"Scenario GO1G: Un uomo giunge all'attenzione del medico per dispnea inspiratoria laringea. Quale tra i seguenti esami e' migliore per valutare nel modo piu' completo la motilita' delle corde vocali e lo spazio respiratorio?",
+    "domande_1":"Radiografia del torace",
+    "domande_2":"Videofluorografia",
+    "domande_3":"Laringoscopia a fibre ottiche",
+    "domande_4":"Laringoscopia indiretta",
+    "domande_5":"La Risposta D e la Risposta A e la Risposta B sono corrette",
+    "others_info":"956db6G32sXJ,2,1,3,0,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":957,
+    "categoriadelladomanda":"93",
+    "d":"Scenario DE2Q: Gregorio ha eseguito un'audiometria tonale liminare ed \u00e8 risultato affetto da ipoacusia recettiva. Per distinguere tra una lesione cocleare o retrococleare eseguite dei test volti alla ricerca della presenza del fenomeno del \"recruiment\" e dell'\"adattamento\".\u00a0Una delle metodiche piu' comuni di determinazione del fenomeno dell'adattamento e' il test di Rosenberg. Nel soggetto normale:",
+    "domande_1":"al massimo sono necessari 1-2 incrementi di intensita' del suono",
+    "domande_2":"sono necessari almeno 6 incrementi di intensita' del suono",
+    "domande_3":"sono necessari aumenti di 20 dB",
+    "domande_4":"al massimo sono necessari 4-5 incrementi di intensita' del suono",
+    "domande_5":"La Risposta A e la Risposta B sono corrette",
+    "others_info":"957dbTHNUmyO,0,3,2,1,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":958,
+    "categoriadelladomanda":"93",
+    "d":"Scenario AA3R: Pierluca \u00e8 un bambino di 17 mesi affetto da palatoschisi. I genitori sono molto confusi e vi chiedono dei chiarimenti in merito ai vari periodi del calendario foniatrico-logopedico.\u00a0Spiegate anche che e' molto importante che con il tempo. Pierluca impari a controllare la direzione della corrente d'aria. Come?",
+    "domande_1":"Devono fare esercizi che consistono nel succhiare la lingua contro il palato e poi rilasciarla",
+    "domande_2":"Devono far bere al bambino liquidi densi attraverso una cannuccia",
+    "domande_3":"Devono fare degli esercizi di soffio ad esempio con una candela aumentando sempre di piu' la distanza dal bambino",
+    "domande_4":"Devono far masticare vigorosamente il bambino",
+    "domande_5":"La Risposta A e la Risposta B sono corrette",
+    "others_info":"958db0faLYY5,2,1,0,3,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":959,
+    "categoriadelladomanda":"93",
+    "d":"Scenario DF32A: Dopo un evento traumatico a livello della regione auricolare un paziente ha effettuato una visita audiologica presso un vostro collega e, chiedendovi un secondo consulto, vi mostra la seguente immagine.\u00a0Nell'immediata fase post-traumatica quale terapia e' utile instaurare?",
+    "domande_1":"Terapia antibiotica per almeno 5 giorni",
+    "domande_2":"Terapia con furosemide per almeno 5 giorni",
+    "domande_3":"Terapia con vitamina E per almeno 5 giorni",
+    "domande_4":"Terapia con pravastatina per almeno 5 giorni",
+    "domande_5":"La Risposta A e la Risposta C e la Risposta B sono corrette",
+    "others_info":"959dbUoOJMFW,0,2,1,3,4",
+    "imagine_del_db":"https:\/\/liberainformazione.it\/admin0290aa\/wp-content\/uploads\/2018\/04\/fru-2.jpg"
+  },
+  {  
+    "id_domanda":960,
+    "categoriadelladomanda":"93",
+    "d":"Scenario XC33G: Un collega vi chiede un consulto per effettuare una diagnosi. Qual e' il referto piu' probabile?",
+    "domande_1":"Presenza di colonie di miceti nel condotto uditivo esterno",
+    "domande_2":"Perforazione centrale della membrana timpanica di natura traumatica",
+    "domande_3":"Esostosi del condotto uditivo esterno",
+    "domande_4":"Tappo di cerume",
+    "domande_5":"La Risposta D e la Risposta A e la Risposta B sono corrette",
+    "others_info":"960dbprZw72z,0,2,3,1,4",
+    "imagine_del_db":"https:\/\/liberainformazione.it\/admin0290aa\/wp-content\/uploads\/2018\/04\/POF.jpg"
+  },
+  {  
+    "id_domanda":961,
+    "categoriadelladomanda":"93",
+    "d":"Scenario CL6A: Una donna accusa una progressiva riduzione dell'udito a destra. Alla riduzione di udito negli ultimi mesi si \u00e8 aggiunto un ronzio omolaterale. Prima di tutto eseguite un esame audiometrico per verificare una reale alterazione dell'udito. Quale tra i seguenti referti e' piu' verosimile in relazione ai sintomi?",
+    "domande_1":"Ipoacusia bilaterale di tipo misto da paralisi del nervo faciale",
+    "domande_2":"Ipoacusia monolaterale destra di tipo neurosensoriale",
+    "domande_3":"Ipoacusia pantonale bilaterale di grado profondo da paralisi del nervo faciale",
+    "domande_4":"Ipoacusia monolaterale sinistra di tipo trasmissivo da paralisi del III nervo cranico",
+    "domande_5":"La Risposta A e la Risposta C e la Risposta B sono corrette",
+    "others_info":"961dbz0isH6m,1,2,0,3,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":1561,
+    "categoriadelladomanda":"93",
+    "d":"Un uomo e' affetto da una labirintite. Quale sintomo NON si evidenziera' nel suo quadro clinico?",
+    "domande_1":"Ipoacusia",
+    "domande_2":"Vomito intenso",
+    "domande_3":"Vertigine intensa",
+    "domande_4":"Atteggiamento a cane di fucile",
+    "domande_5":"La Risposta A e la Risposta B sono corrette",
+    "others_info":"1561dbMowYnXt,3,0,2,1,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":1562,
+    "categoriadelladomanda":"93",
+    "d":"L'acufene:",
+    "domande_1":"e' una sensazione di suono o rumore determinato da stimoli acustici provenienti dall'esterno",
+    "domande_2":"non e' mai di origine vascolare",
+    "domande_3":"e' una sensazione di suono o rumore non determinato da stimoli acustici provenienti dall'esterno",
+    "domande_4":"non e' mai di origine articolare",
+    "domande_5":"I dati forniti non consentono di dare una risposta",
+    "others_info":"1562dbd5phTjN,2,0,1,3,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":1563,
+    "categoriadelladomanda":"93",
+    "d":"Dovete effettuare una valutazione audiometrica su un neonato di 8 mesi. A quale test e' piu' opportuno sottoporlo?",
+    "domande_1":"Test di Billus",
+    "domande_2":"Un test audiometrico tradizionale",
+    "domande_3":"Il Boel test",
+    "domande_4":"Un'audiometria con rinforzo visivo",
+    "domande_5":"Nessuana delle Risposte precedenti",
+    "others_info":"1563dbNkTvIci,2,1,3,0,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":1564,
+    "categoriadelladomanda":"93",
+    "d":"Scenario DC1H: Gregorio ha eseguito un'audiometria tonale liminare ed \u00e8 risultato affetto da ipoacusia recettiva. Per distinguere tra una lesione cocleare o retrococleare eseguite dei test volti alla ricerca della presenza del fenomeno del \"recruiment\" e dell'\"adattamento\".\u00a0La metodica piu' comune di determinazione del fenomeno dell'adattamento e' il test di Rosenberg. Come si esegue?",
+    "domande_1":"Invio di un tono puro, continuo e di intensita' di 5 dB sopra la soglia. Quando il paziente segnala la scomparsa della sensazione acustica aumentate di 5 dB l'intensita' dello stimolo. Dopo 60\" si calcola in numero di incrementi di intensita'",
+    "domande_2":"Invio di un tono non puro e discontinuo di intensita' di 15 dB sopra la soglia. Quando il paziente segnala la scomparsa della sensazione acustica aumentate di 10 dB l'intensita' dello stimolo. Si segnala quante volte il paziente percepisce lo stimolo sonoro",
+    "domande_3":"Invio di un tono puro e continuo di intensita' di 15 dB sopra la soglia. Si segnala quanti incrementi sono necessari affinche' il soggetto percepisca lo stimolo sonoro",
+    "domande_4":"Invio di un tono discontinuo a intervalli di 15\". Si segnala quanti incrementi sono necessari affinche' il soggetto percepisca lo stimolo sonoro",
+    "domande_5":"I dati forniti non consentono di dare una risposta",
+    "others_info":"1564dbIMDTCAj,0,1,3,2,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":1565,
+    "categoriadelladomanda":"93",
+    "d":"Scenario FV2X: Melissa vi riferisce che da circa una settimana quando la mattina si alza dal letto ha una intensa vertigine. Sospettate si possa trattare di una cupolitiasi del canale semicircolare posteriore. Quale delle seguenti manovre potrebbe confermare il vostro sospetto?",
+    "domande_1":"manovra di Segey",
+    "domande_2":"Manovra di Dix-Hallpike",
+    "domande_3":"Manovra di Parletti",
+    "domande_4":"Manovra di McClure-Pagnini",
+    "domande_5":"La Risposta A e la Risposta C e la Risposta B sono corrette",
+    "others_info":"1565dbJAAwZ7u,1,3,0,2,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":1566,
+    "categoriadelladomanda":"93",
+    "d":"Scenario DF3V: Un paziente ha effettuato una visita audiologica presso un vostro collega e, chiedendovi un secondo consulto, vi mostra la seguente immagine.\u00a0Qual e' la diagnosi piu' probabile?",
+    "domande_1":"Tappo di cerume",
+    "domande_2":"Perforazione sub-totale della membrana timpanica",
+    "domande_3":"Perforazione inferiore della membrana timpanica",
+    "domande_4":"Perforazione antero-superiore della membrana timpanica",
+    "domande_5":"I dati forniti non consentono di dare una risposta",
+    "others_info":"1566dbm4YA9nR,3,1,2,0,4",
+    "imagine_del_db":"https:\/\/liberainformazione.it\/admin0290aa\/wp-content\/uploads\/2018\/04\/fru-2.jpg"
+  },
+  {  
+    "id_domanda":1567,
+    "categoriadelladomanda":"93",
+    "d":"Scenario DD4C: Un uomo accusa, da circa due giorni, un'improvvisa riduzione dell'udito all'orecchio destro. L'anamnesi remota e prossima non evidenzia alcun elemento degno di nota.\u00a0Dopo aver eseguito un esame audiometrico, il medico sospetta si possa trattare di un'ipoacusia improvvisa. Perche'?",
+    "domande_1":"All'esame audiometrico si evidenzia una perdita uditiva di tipo misto superiore a 20 dB su due frequenze contigue",
+    "domande_2":"All'esame audiometrico si evidenzia una perdita uditiva neurosensoriale superiore a 30 dB su tre frequenze contigue",
+    "domande_3":"All'esame audiometrico si evidenzia una perdita uditiva di tipo trasmissivo superiore a 10 dB su tre frequenze contigue",
+    "domande_4":"All'esame audiometrico si evidenzia una perdita uditiva neurosensoriale superiore a 50 dB almeno su cinque frequenze contigue",
+    "domande_5":"La Risposta B e la Risposta C sono corrette",
+    "others_info":"1567db2GFQ1ym,1,2,3,0,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":1568,
+    "categoriadelladomanda":"93",
+    "d":"Scenario SS5C: Un pediatra consulta l'audiologo in merito all'interpretazione del timpanogramma in figura. Il medico consultato rispondera' che si tratta di un timpanogramma di tipo:",
+    "domande_1":"C",
+    "domande_2":"A",
+    "domande_3":"As\/B",
+    "domande_4":"P",
+    "domande_5":"La Risposta C e la Risposta A e la Risposta B sono corrette",
+    "others_info":"1568dbJLEsxhl,2,1,3,0,4",
+    "imagine_del_db":"https:\/\/liberainformazione.it\/admin0290aa\/wp-content\/uploads\/2018\/04\/oki.jpg"
+  },
+  {  
+    "id_domanda":1569,
+    "categoriadelladomanda":"93",
+    "d":"Scenario IU6L: Un uomo accusa una progressiva riduzione dell'udito a destra. Dice che questo disturbo \u00e8 peggiorato negli ultimi mesi in occasione della comparsa di un ronzio omolaterale. Il referto dell'esame audiometrico suggerisce al medico di effettuare una ABR (studio dei potenziali evocati). Perche'?",
+    "domande_1":"Perche' l'ABR potrebbe evidenziare uno stiramento e compressione della struttura nervosa",
+    "domande_2":"L'esecuzione del potenziali evocati non puo' aggiungere alcuna informazione per confermare il sospetto diagnostico",
+    "domande_3":"Perche' l' ABR da' sempre tutte le informazioni per stabilire un iter terapeutico",
+    "domande_4":"Perche' lo studio dei potenziali evocati e' patognomico e da' sempre tutte le informazioni necessarie per confermare il sospetto diagnostico",
+    "domande_5":"La Risposta B e la Risposta C sono corrette",
+    "others_info":"1569db9SFTsfp,0,3,2,1,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":1965,
+    "categoriadelladomanda":"93",
+    "d":"Scenario SS6Q: Quale referto tra i seguenti \u00e8 corretto?",
+    "domande_1":"Ipoacusia destra di tipo neurosensoriale solo per le frequenze gravi",
+    "domande_2":"Ipoacusia sinistra di tipo neurosensoriale",
+    "domande_3":"Ipoacusia destra di tipo trasmissivo",
+    "domande_4":"Ipoacusia sinistra di tipo neurosensoriale solo per le frequenza gravi",
+    "domande_5":"La Risposta A e la Risposta B sono corrette",
+    "others_info":"uguv6cif,1,2,0,3,4",
+    "imagine_del_db":"https:\/\/liberainformazione.it\/admin0290aa\/wp-content\/uploads\/2018\/04\/ok-2.jpg"
+  },
+  {  
+    "id_domanda":1966,
+    "categoriadelladomanda":"93",
+    "d":"Scenario IU6L: Un uomo accusa una progressiva riduzione dell'udito a destra. Dice che questo disturbo \u00e8 peggiorato negli ultimi mesi in occasione della comparsa di un ronzio omolaterale.\u00a0Qual \u00e8 la diagnosi pi\u00f9 probabile tra le seguenti?",
+    "domande_1":"Paralisi del nervo trocleare",
+    "domande_2":"Attacco ischemico transitorio",
+    "domande_3":"Neurinoma del nervo acustico",
+    "domande_4":"Paralisi del III nervo cranico",
+    "domande_5":"Nessuana delle Risposte precedenti",
+    "others_info":"upm8nrgp,2,0,1,3,4",
+    "imagine_del_db":""
+  },
+  {  
+    "id_domanda":1967,
+    "categoriadelladomanda":"93",
+    "d":"Scenario XX7R: Un paziente giunge alla vostra attenzione perch\u00e9 da circa dieci giorni accusa un'intensa vertigine quando si gira nel letto. Sospettate una cupolitiasi del canale semicircolare posteriore.\u00a0Quale manovra terapeutica eseguireste?\u200b\u200b\u200b\u200b\u200b\u200b\u200b",
+    "domande_1":"Manovra barbecue: al paziente coricato viene fatta eseguire una rotazione di 270\u00b0-360\u00b0 verso il lato sano",
+    "domande_2":"Tecnica di Gufoni: la paziente seduta con gambe fuori dal lettino viene coricata sul fianco facendo ruotare il capo di 30\u00b0 verso il basso",
+    "domande_3":"Posizione coatta di Vannucchi: la paziente giace per almeno 12 ore sul lato non interessato dalla litiasi canalicolare",
+    "domande_4":"Manovra di Semont: la paziente seduta con gambe fuori dal lettino viene portata rapidamente coricata sul lato patologico scatenandol'attacco. Al termine della vertigine la paziente viene portata in decubito sul lato sano e vi rimane per alcuni minuti. La paziente viene quindi riportata nella posizione seduta mantenendo il capo ruotato verso il lato sano",
+    "domande_5":"La Risposta A e la Risposta B sono corrette",
+    "others_info":"i1tahabn,3,2,0,1,4",
+    "imagine_del_db":""
+  }
+];
+
+const generateQuiz = () => {
+  let quizzes = quizTest;
+  quizzes = quizzes.map((currentValue, index) => {
+    const result = {
+      id: index,
+      id_question: currentValue.id_domanda,
+      question: currentValue.d,
+      image: currentValue.imagine_del_db
+    };
+
+    const values = currentValue.others_info.split(',');
+    let i = 0;
+    for (; i < values.length; i++) {
+      if (values[i] === '0') break;
+    }
+    result.correct = i - 1;
+
+    i = 1;
+    const answers = [];
+    while (currentValue[`domande_${i}`] !== undefined) {
+      answers.push(currentValue[`domande_${i}`]);
+      i++;
+    }
+    result.answers = answers;
+
+    return result;
+  });
+
+  return quizzes;
+};
+    
+let quizzes = generateQuiz();
+console.log(quizzes);
+</script>

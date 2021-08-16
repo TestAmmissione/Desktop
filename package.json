@@ -1,0 +1,44 @@
+{
+  "name": "Ammissione",
+  "version": "1.4.0",
+  "description": "Eseguibile per accedere ad Ammissione",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron . --disable-background-timer-throttling",
+    "build": "./build.sh"
+  },
+  "keywords": [
+    "Ammissione",
+    "TestAmmissione"
+  ],
+  "author": "TestAmmissione S.r.l.",
+  "devDependencies": {
+    "electron": "3.1.7",
+    "electron-packager": "^15.3.0",
+    "os": "^0.1.1",
+    "postcss-cli": "^6.0.1",
+    "postcss-filter-plugins": "^3.0.1",
+    "postcss-preset-env": "^6.4.0"
+  },
+  "license": "",
+  "dependencies": {
+    "@sentry/electron": "^0.17.0",
+    "oauth-electron-facebook": "^2.0.9"
+  },
+  "build": {
+    "appId": "com.ammissione"
+  },
+  "mac": {
+    "target": [
+      "mas"
+    ]
+  },
+  "mas": {
+    "hardenedRuntime": false,
+    "provisioningProfile": "build/embedded.provisionprofile",
+    "entitlements": "build/entitlements.mas.plist",
+    "entitlementsInherit": "build/entitlements.mas.inherit.plist",
+    "gatekeeperAssess": false,
+    "asarUnpack": []
+  }
+}
